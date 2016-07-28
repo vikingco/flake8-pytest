@@ -23,4 +23,4 @@ When both ``flake8`` and ``flake8-pytest`` are installed, the plugin is
 available in ``flake8``::
 
     $ flake8 --version
-    2.0 (pep8: 1.4.5, flake8-pytest: 1.0, pyflakes: 0.6.1)
+    2.0 (pep8: 1.4.5, flake8-pytest: 1.1, pyflakes: 0.6.1)

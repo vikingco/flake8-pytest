@@ -3,20 +3,17 @@ import tokenize
 
 from sys import stdin
 
-__version__ = '1.0'
+__version__ = '1.1'
 
 PYTEST_ERROR_CODE = 'T003'
 PYTEST_ERROR_MESSAGE = 'use of Django-style assert statement found (instead of regular assert)'
-ASSERTS = ('assertAlmostEqual', 'assertAlmostEquals', 'assertContains', 'assertDictContainsSubset', 'assertDictEqual',
-           'assertEqual', 'assertEquals', 'assertFalse', 'assertFieldOutput', 'assertFormError', 'assertFormsetError',
-           'assertGreater', 'assertGreaterEqual', 'assertHTMLEqual', 'assertHTMLNotEqual', 'assertIn', 'assertInHTML',
-           'assertIs', 'assertIsInstance', 'assertIsNone', 'assertIsNot', 'assertIsNotNone', 'assertItemsEqual',
-           'assertJSONEqual', 'assertJSONNotEqual', 'assertLess', 'assertLessEqual', 'assertListEqual',
+ASSERTS = ('assertAlmostEqual', 'assertAlmostEquals', 'assertDictEqual', 'assertEqual', 'assertEquals', 'assertFalse',
+           'assertGreater', 'assertGreaterEqual', 'assertIn', 'assertIs', 'assertIsInstance', 'assertIsNone',
+           'assertIsNot', 'assertIsNotNone', 'assertItemsEqual', 'assertLess', 'assertLessEqual', 'assertListEqual',
            'assertMultiLineEqual', 'assertNotAlmostEqual', 'assertNotAlmostEquals', 'assertNotContains',
            'assertNotEqual', 'assertNotEquals', 'assertNotIn', 'assertNotIsInstance', 'assertNotRegexpMatches',
-           'assertNumQueries', 'assertQuerysetEqual', 'assertRaises', 'assertRaisesMessage', 'assertRaisesRegexp',
-           'assertRedirects', 'assertRegexpMatches', 'assertSequenceEqual', 'assertSetEqual', 'assertTemplateNotUsed',
-           'assertTemplateUsed', 'assertTrue', 'assertTupleEqual', 'assertXMLEqual', 'assertXMLNotEqual', 'assert_')
+           'assertRaises', 'assertRaisesMessage', 'assertRaisesRegexp', 'assertRegexpMatches', 'assertSequenceEqual',
+           'assertSetEqual', 'assertTrue', 'assertTupleEqual', 'assert_')
 
 
 class PytestAssertChecker(object):
