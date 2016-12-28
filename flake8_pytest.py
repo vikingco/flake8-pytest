@@ -3,17 +3,17 @@ import tokenize
 
 from sys import stdin
 
-__version__ = '1.1'
+__version__ = '1.2'
 
 PYTEST_ERROR_CODE = 'T003'
 PYTEST_ERROR_MESSAGE = 'use of Django-style assert statement found (instead of regular assert)'
 ASSERTS = ('assertAlmostEqual', 'assertAlmostEquals', 'assertDictEqual', 'assertEqual', 'assertEquals', 'assertFalse',
            'assertGreater', 'assertGreaterEqual', 'assertIn', 'assertIs', 'assertIsInstance', 'assertIsNone',
-           'assertIsNot', 'assertIsNotNone', 'assertItemsEqual', 'assertLess', 'assertLessEqual', 'assertListEqual',
+           'assertIsNot', 'assertIsNotNone', 'assertItemsEqual', 'assertLess', 'assertLessEqual',
            'assertMultiLineEqual', 'assertNotAlmostEqual', 'assertNotAlmostEquals', 'assertNotContains',
            'assertNotEqual', 'assertNotEquals', 'assertNotIn', 'assertNotIsInstance', 'assertNotRegexpMatches',
-           'assertRaises', 'assertRaisesMessage', 'assertRaisesRegexp', 'assertRegexpMatches', 'assertSequenceEqual',
-           'assertSetEqual', 'assertTrue', 'assertTupleEqual', 'assert_')
+           'assertRaises', 'assertRaisesMessage', 'assertRaisesRegexp', 'assertRegexpMatches',
+           'assertSetEqual', 'assertTrue', 'assert_')
 
 
 class PytestAssertChecker(object):
