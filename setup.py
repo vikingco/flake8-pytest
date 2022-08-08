@@ -32,7 +32,7 @@ setup(
     zip_safe=False,
     entry_points={
         'flake8.extension': [
-            'flake8_pytest = flake8_pytest:PytestAssertChecker',
+            'T = flake8_pytest:PytestAssertChecker',
         ],
     },
     install_requires=install_requires,
