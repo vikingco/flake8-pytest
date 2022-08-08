@@ -3,7 +3,7 @@ import tokenize
 
 from sys import stdin
 
-__version__ = '1.3'
+__version__ = '1.4'
 
 PYTEST_ERROR_CODE = 'T003'
 PYTEST_ERROR_MESSAGE = 'use of Django-style assert statement found (instead of regular assert)'
